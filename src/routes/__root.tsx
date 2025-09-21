@@ -5,7 +5,11 @@ import { TanstackDevtools } from '@tanstack/react-devtools'
 export const Route = createRootRoute({
   component: () => (
     <>
-      <Outlet />
+      <div>헤더 위치</div>
+      <main>
+        <Outlet />
+      </main>
+      <div>푸터 위치</div>
       <TanstackDevtools
         config={{
           position: 'bottom-left',
